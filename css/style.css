@@ -1,0 +1,25 @@
+
+
+
+#content-1 {
+	background: none repeat scroll 0 0 #8e8e8e;
+	float: left;
+	height: 400px;
+	margin-left: 50px;
+	margin-top: 15px;
+	padding: 15px;
+	width: 280px;
+	overflow: auto;
+}
+#log {
+	color:#ff0000;
+	margin-top:20px;
+	margin-left: 20px;
+	float: left;
+	display: block;
+	clear: both;
+}
+#log b {
+	font-weight: normal;
+	color: #999999;
+}
