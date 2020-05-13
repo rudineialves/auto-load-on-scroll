@@ -11,7 +11,7 @@
 	width: 280px;
 	overflow: auto;
 }
-#log {
+#log, #console {
 	color:#ff0000;
 	margin-top:20px;
 	margin-left: 20px;
@@ -19,7 +19,7 @@
 	display: block;
 	clear: both;
 }
-#log b {
+#log b, #console b {
 	font-weight: normal;
 	color: #999999;
 }

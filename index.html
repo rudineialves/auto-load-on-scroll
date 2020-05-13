@@ -9,15 +9,20 @@
 	
 	<script type="text/javascript">
 		$(function(){
+
+			var content_more = $('#content-1').html(); //get example content
+
 			$('#content-1').autoLoadOnScroll({				
 				onScroller : function(data){  // function on scroller
 					$("#log").html('<b>Scroll Top:</b> '+data.scrollTop+' &nbsp; &nbsp; <b>Scroll Bottom:</b> '+data.scrollBottom+' &nbsp; &nbsp; <b>Scroll Height:</b> '+data.scrollHeight);
+					$("#console").html('Scrolling...');
 				},
 				onScrollTop : function(){     // function on top
-					alert('scroll top');
+					$("#console").html('Scroll top!');
 				},
 				onScrollBottom : function(){  // function on bottom
-					alert('scroll bottom');
+					$('#content-1').append('<p style="color:#ccc">Scroll bottom! Loading new content...</p>'+content_more);
+					$("#console").html('Scroll bottom! Loading new content...');
 				},
 			});
 		});
@@ -52,6 +57,7 @@
 	</div>
 
 	<div id="log" >Log:</div>
+	<div id="console" ></div>
 
 </body>
 </html>
